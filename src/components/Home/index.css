@@ -1,0 +1,247 @@
+.story-image {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 30px;
+}
+.user-story-name {
+  color: #262626;
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  width: 60%;
+}
+
+@media screen and (min-width: 768px) {
+  .story-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+  }
+  .user-story-name {
+    width: 60%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .story-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+  }
+}
+
+.user-story-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+.slick-container {
+  width: 80%;
+  max-width: 800px;
+  margin-top: 15px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+.home-main-bg-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fafafa;
+  flex-shrink: 0;
+}
+.line {
+  width: 100%;
+  height: 0.5px;
+  background: #c6c6c8;
+  margin-top: 10px;
+}
+
+.posts-items-container {
+  padding-left: 0px;
+  width: 100%;
+  max-width: 800px;
+}
+.post-list-item {
+  list-style-type: none;
+  margin-top: 20px;
+}
+.profile-pic-name-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.profile-pic-container {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  background: linear-gradient(#e20337, #c60188, #7700c3);
+  border-radius: 50%;
+  padding: 1px;
+  margin-right: 10px;
+}
+.profile-pic {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #ffffff;
+}
+.userName {
+  color: #262626;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.1px;
+}
+.post-image {
+  width: 100%;
+  height: 375px;
+  flex-shrink: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.like-button {
+  background-color: transparent;
+  border: none;
+}
+.icon-style {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.icons-container {
+  display: flex;
+  align-items: center;
+}
+.like-count {
+  color: #262626;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: -0.07px;
+  margin-left: 12px;
+}
+.caption {
+  color: #262626;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: -0.07px;
+  width: 80%;
+  margin-left: 12px;
+}
+.comment {
+  color: #262626;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.07px;
+  margin-left: 12px;
+  width: 80%;
+  line-height: 16px;
+}
+.commented-username {
+  color: #262626;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  margin-right: 3px;
+}
+.post-created-at {
+  color: #989898;
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2px; /* 160% */
+  letter-spacing: 0.05px;
+  margin-left: 12px;
+}
+
+@media screen and (min-width: 800px) {
+  .line {
+    display: none;
+  }
+  .post-image {
+    height: 550px;
+  }
+  .post-list-item {
+    border-radius: 4px 4px 0px 0px;
+    border: 1px solid #dbdbdb;
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .like-count {
+    font-size: 14px;
+  }
+  .post-created-at {
+    font-size: 12px;
+  }
+  .commented-username {
+    font-size: 14px;
+  }
+  .comment {
+    font-size: 14px;
+  }
+  .caption {
+    font-size: 14px;
+  }
+}
+
+.failure-view {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.try-again-button {
+  display: flex;
+  padding: 8px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: #4094ef;
+  color: var(--light-base-white, #fff);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+.failure-view-text {
+  color: #262626;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.failure-view-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

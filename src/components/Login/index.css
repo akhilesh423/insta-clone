@@ -1,0 +1,106 @@
+.website-logo {
+  width: 78px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.whole-login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login-image {
+  display: none;
+}
+.insta-share-heading {
+  color: #262626;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
+}
+.label-username {
+  color: #262626;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+}
+.input-element {
+  width: 312px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: #eee;
+  outline: none;
+  border: none;
+  color: #262626;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  padding: 5px;
+}
+
+.input-element-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.login-button {
+  display: flex;
+  width: 312px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #4094ef;
+  color: #ffffff;
+  border: 1px solid #4094ef;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.form-element {
+  background: #fff;
+}
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.error-msg {
+  color: var(--light-red-500, #ef4444);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (min-width: 1000px) {
+  .login-form-container {
+    border-radius: 8px;
+    background: #fefeff;
+    box-shadow: 0px 8px 40px 0px rgba(7, 7, 7, 0.08);
+    width: 404px;
+    height: 406px;
+    flex-shrink: 0;
+    margin-left: 30px;
+  }
+
+  .login-image {
+    display: inline;
+    width: 496px;
+    height: 325px;
+    flex-shrink: 0;
+    margin-right: 30px;
+  }
+}
