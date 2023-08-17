@@ -10,9 +10,6 @@ import {FcLike} from 'react-icons/fc'
 import {FaRegComment} from 'react-icons/fa'
 import {BiShareAlt} from 'react-icons/bi'
 
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-
 import Header from '../Header'
 
 import './index.css'
@@ -200,7 +197,7 @@ class Home extends Component {
 
             {eachItem.comments.map(eachComment => (
               <>
-                <p className="comment">
+                <p className="comment" key={eachComment.userId}>
                   <span className="commented-username">
                     {eachComment.userName}
                   </span>
@@ -232,9 +229,9 @@ class Home extends Component {
         alt="failure view"
         src="https://res.cloudinary.com/dss1xnwen/image/upload/v1692219660/d47dmt3vj6ebvjhw2inu.png"
       />
-      <h1 className="failure-view-text">
+      <p className="failure-view-text">
         Something went wrong. Please try again.
-      </h1>
+      </p>
       <button
         onClick={this.onClickRetry}
         type="button"
@@ -266,7 +263,9 @@ class Home extends Component {
         <div className="home-main-bg-container">
           <div className="slick-container">{this.renderStories()}</div>
           <hr className="line" />
-          {this.renderAllPostsViews()}
+          <div className="home-posts-container">
+            {this.renderAllPostsViews()}
+          </div>
         </div>
       </>
     )

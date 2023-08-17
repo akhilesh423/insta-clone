@@ -19,11 +19,11 @@ class Header extends Component {
 
   renderOnClickMenu = () => (
     <ul className="menu-items-container">
-      <Link to="/">
+      <Link to="/" className="link-header">
         <li className="menu-list-item list-item-style">Home</li>
       </Link>
       <li className="menu-list-item list-item-style">Search</li>
-      <Link to="/profile">
+      <Link to="/my-profile" className="link-header">
         <li className="menu-list-item list-item-style">Profile</li>
       </Link>
       <li className="menu-list-item">
@@ -61,7 +61,7 @@ class Header extends Component {
       <nav className="navbar">
         <div className="navbar-first-container">
           <div className="header-items-container">
-            <Link to="/">
+            <Link to="/" className="link-header">
               <img
                 className="header-logo"
                 alt="website logo"
@@ -94,10 +94,10 @@ class Header extends Component {
                 <FaSearch className="search-icon" />
               </button>
             </li>
-            <Link to="/">
+            <Link to="/" className="link-header">
               <li className="menu-list-item list-item-style">Home</li>
             </Link>
-            <Link to="/profile">
+            <Link to="/my-profile" className="link-header">
               <li className="menu-list-item list-item-style">Profile</li>
             </Link>
 
